@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Conversation"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="55sp"
+        android:background="@color/bg"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/message_input_view"
+            android:layout_width="140pt"
+            android:layout_height="23sp"
+            android:layout_marginHorizontal="15sp"
+            android:background="@drawable/edit_text"
+            android:hint="Сообщение..."
+            android:paddingLeft="20sp"
+            android:textSize="15sp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text" />
+
+
+
+        <ImageButton
+            android:id="@+id/message_send_button"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:background="@drawable/send_button"
+            android:text="send"
+            android:textSize="7sp"
+            android:layout_marginLeft="5sp"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+    </LinearLayout>
+
+</FrameLayout>

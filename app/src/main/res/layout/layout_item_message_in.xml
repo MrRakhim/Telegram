@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="16sp"
+    android:orientation="horizontal"
+    android:background="@drawable/message_in"
+    android:layout_marginRight="100sp"
+    android:layout_marginLeft="20sp"
+    android:layout_marginTop="5sp">
+
+    <TextView
+        android:layout_gravity="left|center"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello"
+        android:textColor="@color/white"
+        android:layout_marginRight="20sp"
+        />
+    <TextView
+        android:layout_gravity="right|bottom"
+        android:id="@+id/date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="22.10"
+        android:textSize="10sp"
+        android:textColor="@color/greyText"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="3sp"
+        />
+
+
+</FrameLayout>
